@@ -14,7 +14,6 @@ public class Inventario {
             Class.forName("com.mysql.jdbc.Driver");
             try {
                 cnn=DriverManager.getConnection("jdbc:mysql://localhost/inventario","root","");
-                JOptionPane.showMessageDialog(null,"Conexion con inventario exitoso");
             } 
             catch (SQLException ex) {
                 JOptionPane.showMessageDialog(null,"Error de conexion con la base de datos "+ex);

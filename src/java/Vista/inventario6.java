@@ -1,26 +1,26 @@
 package Vista;
 
 public class inventario6 {
-    private int cedula;
+    private String cedula;
     private String nombres;
     private String apellidos;
-    private int celular;
+    private String celular;
 
     public inventario6() {
     }
 
-    public inventario6(int cedula, String nombres, String apellidos, int celular) {
+    public inventario6(String cedula, String nombres, String apellidos, String celular) {
         this.cedula = cedula;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.celular = celular;
     }
 
-    public int getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
-    public void setCedula(int cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
@@ -40,11 +40,11 @@ public class inventario6 {
         this.apellidos = apellidos;
     }
 
-    public int getCelular() {
+    public String getCelular() {
         return celular;
     }
 
-    public void setCelular(int celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
     }
     

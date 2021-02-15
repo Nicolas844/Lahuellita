@@ -1,3 +1,10 @@
+<%@page import="Vista.inventario14"%>
+<%@page import="Vista.inventario13"%>
+<%@page import="Vista.inventario12"%>
+<%@page import="Vista.inventario11"%>
+<%@page import="Vista.inventario10"%>
+<%@page import="Vista.inventario9"%>
+<%@page import="Vista.inventario8"%>
 <%@page import="Vista.inventario7"%>
 <%@page import="Vista.inventario6"%>
 <%@page import="Vista.inventario5"%>
@@ -198,7 +205,7 @@
         </table>
         <h2><center>Empleado</center></h2>
         <form action="" method="post">
-            <input type="number" class="doc" id="ce" name="ce" placeholder="Cedula">
+            <input type="text" class="doc" id="ce" name="ce" placeholder="Cedula">
             <input type="text" class="doc" id="no" name="no" placeholder="Nombres">
             <input type="text" class="doc" id="ap" name="ap" placeholder="Apellidos">
             <input type="number" class="doc" id="cel" name="cel" placeholder="Celular">
@@ -270,18 +277,29 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<inventario8>dt7=new ArrayList<>();
+                GestionInventario ge7=new GestionInventario();
+                dt7=ge7.consultarprod();
+                inventario8 i8=new inventario8();
+                for(int i=0;i<dt6.size();i++){
+                    i8=dt7.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <tb></tb>
-                    <tb></tb>
-                </tr>
+                    <td><%=i8.getIdproducto()%></td>
+                    <td><%=i8.getTipo()%></td>
+                    <td><%=i8.getNombrep()%></td>
+                    <td><%=i8.getTalla()%></td>
+                    <td><%=i8.getValor()%></td>
+                    <td><%=i8.getCantidad()%></td>
+                    <td><%=i8.getIdproduccion()%></td>
+                    <td><%=i8.getIdsalida()%></td>
+                </tr>getTipos()%></
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Solicita</center></h2>
         <form action="" method="post">
@@ -293,14 +311,55 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<inventario9>dt8=new ArrayList<>();
+                GestionInventario ge8=new GestionInventario();
+                dt8=ge8.consultarsol();
+                inventario9 i9=new inventario9();
+                for(int i=0;i<dt8.size();i++){
+                    i9=dt8.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=i9.getSolicita()%></td>
+                    <td><%=i9.getCedula()%></td>
+                    <td><%=i9.getIdpedido()%></td>
+                    <td><%=i9.getFecha()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
+        </table>
+        <h2><center>Recibe</center></h2>
+        <form action="" method="post">
+            <input type="number" class="doc" id="idre" name="idre" placeholder="Id Recibe">
+            <input type="number" class="doc" id="cedl" name="cedl" placeholder="Cedula">
+            <input type="number" class="doc" id="prou" name="prou" placeholder="Id del pedido">
+            <input type="fecha" class="doc" id="fem" name="fem" placeholder="fecha">
+            <input type="submit" name="ing" class="ing" id="ing" value="Ingresar">
+            <input type="submit" name="act" class="act" id="act" value="Actualizar">
+        </form>
+        <table border="5" width="90%">
+            <%
+                ArrayList<inventario10>dt9=new ArrayList<>();
+                GestionInventario ge9=new GestionInventario();
+                dt9=ge9.consultarre();
+                inventario10 i10=new inventario10();
+                for(int i=0;i<dt9.size();i++){
+                    i10=dt9.get(i);
+            %>
+            <tbody>
+                <tr>
+                    <td><%=i10.getIdrecibe()%></td>
+                    <td><%=i10.getCedula()%></td>
+                    <td><%=i10.getIdpedido()%></td>
+                    <td><%=i10.getFecha()%></td>
+                </tr>
+            </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Realiza</center></h2>
         <form action="" method="post">
@@ -311,13 +370,24 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<inventario11>dt10=new ArrayList<>();
+                GestionInventario ge10=new GestionInventario();
+                dt10=ge10.consultarrea();
+                inventario11 i11=new inventario11();
+                for(int i=0;i<dt10.size();i++){
+                    i11=dt10.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=i11.getIdrealizado()%></td>
+                    <td><%=i11.getCedula()%></td>
+                    <td><%=i11.getIdproduccion()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Registra</center></h2>
         <form action="" method="post">
@@ -328,30 +398,52 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<inventario12>dt11=new ArrayList<>();
+                GestionInventario ge11=new GestionInventario();
+                dt11=ge11.consultarra();
+                inventario12 i12=new inventario12();
+                for(int i=0;i<dt11.size();i++){
+                    i12=dt11.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=i12.getIdregistra()%></td>
+                    <td><%=i12.getCedula()%></td>
+                    <td><%=i12.getIdsalida()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Tener</center></h2>
         <form action="" method="post">
-            <input type="number" class="doc" id="idt" name="idt" placeholder="Id tiene">
+            <input type="number" class="doc" id="idt" name="idt" placeholder="Id">
             <input type="number" class="doc" id="ida" name="ida" placeholder="Id del auxiliar">
             <input type="number" class="doc" id="ret" name="ret" placeholder="Referencia">
             <input type="submit" name="ing" class="ing" id="ing" value="Ingresar">
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<inventario13>dt12=new ArrayList<>();
+                GestionInventario ge12=new GestionInventario();
+                dt12=ge12.consultarte();
+                inventario13 i13=new inventario13();
+                for(int i=0;i<dt12.size();i++){
+                    i13=dt12.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=i13.getIdtiene()%></td>
+                    <td><%=i13.getAux()%></td>
+                    <td><%=i13.getReferencia()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Hacer</center></h2>
         <form action="" method="post">
@@ -362,13 +454,24 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<inventario14>dt13=new ArrayList<>();
+                GestionInventario ge13=new GestionInventario();
+                dt13=ge13.consultarha();
+                inventario14 i14=new inventario14();
+                for(int i=0;i<dt13.size();i++){
+                    i14=dt13.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=i14.getIdhacen()%></td>
+                    <td><%=i14.getIdproduccion()%></td>
+                    <td><%=i14.getReferencia()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <section id="info">
             <div class="contenedor">
