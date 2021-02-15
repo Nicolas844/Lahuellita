@@ -42,15 +42,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Cedula</th>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Telefono</th>
-                    <th>Genero</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -70,13 +61,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>N_factura</th>
-                    <th>Total_semana</th>
-                    <th>Id_empleado</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -96,15 +80,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Registro</th>
-                    <th>Encargado</th>
-                    <th>Cedula</th>
-                    <th>Id_empleado</th>
-                    <th>Codigo</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -124,13 +99,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Codigo</th>
-                    <th>Descripcion</th>
-                    <th>Tarifa</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -151,16 +119,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>N°_registro</th>
-                    <th>Id_empleado</th>
-                    <th>Total_diario</th>
-                    <th>Cantidad</th>
-                    <th>Fecha</th>
-                    <th>Descripcion</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -180,7 +138,7 @@
                 </div>
                 <div class="info-users">
                     <img src="img/sebastian.jpeg">
-                    <h4>Sebastian TriviÃ±o</h4>
+                    <h4>Sebastian Triviño</h4>
                 </div>
                 <div class="info-users">
                     <img src="img/Nicolas.jpg">

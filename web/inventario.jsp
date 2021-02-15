@@ -43,14 +43,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_distribuidor</th>
-                    <th>Nombre</th>
-                    <th>Contacto</th>
-                    <th>Direccion</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -70,14 +62,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_pedido</th>
-                    <th>Id_distribuidor</th>
-                    <th>Fecha</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -100,15 +84,6 @@
         </form>
         <table border="5" width="90%">
             <thead>
-                <tr>
-                    <th>Aux</th>
-                    <th>Numero</th>
-                    <th>Id_pedido</th>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Subtotal</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -130,14 +105,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Referencia</th>
-                    <th>Nombre_ma</th>
-                    <th>Cantidad_ma</th>
-                    <th>Tipo_ma</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -157,14 +124,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_produccion</th>
-                    <th>Descripcion</th>
-                    <th>Cantidad</th>
-                    <th>Fecha</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -184,14 +143,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Cedula</th>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Celular</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -211,14 +162,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_Salida</th>
-                    <th>Fecha</th>
-                    <th>Cantidad_sa</th>
-                    <th>Tipo_sa</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -242,18 +185,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_producto</th>
-                    <th>Tipo</th>
-                    <th>Nombre_pro</th>
-                    <th>Talla</th>
-                    <th>Valor</th>
-                    <th>Cantidad</th>
-                    <th>Id_produccion</th>
-                    <th>Id_salida</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -277,14 +208,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_solicita</th>
-                    <th>Cedula</th>
-                    <th>Id_pedido</th>
-                    <th>Fecha</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -303,13 +226,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_realizado</th>
-                    <th>Cedula</th>
-                    <th>Id_produccion</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -327,13 +243,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_registra</th>
-                    <th>Cedula</th>
-                    <th>Id_salida</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -351,13 +260,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_tiene</th>
-                    <th>Id_auxi</th>
-                    <th>Referencia</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -375,13 +277,6 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
-            <thead>
-                <tr>
-                    <th>Id_hacen</th>
-                    <th>Id_produccion</th>
-                    <th>Referencia</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td></td>
@@ -398,7 +293,7 @@
                 </div>
                 <div class="info-users">
                     <img src="img/sebastian.jpeg">
-                    <h4>Sebastian TriviÃ±o</h4>
+                    <h4>Sebastian Triviño</h4>
                 </div>
                 <div class="info-users">
                     <img src="img/Nicolas.jpg">

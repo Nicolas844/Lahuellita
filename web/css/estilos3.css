@@ -82,8 +82,8 @@ table{
     margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 15px;
-    background-color: #146DA9;
-    border-color: rgb(30,132,73);
+    background-color: whitesmoke;
+    border-color: firebrick;
 }
 thead{
     text-align: center;
