@@ -1,3 +1,8 @@
+<%@page import="Vista.nomina3"%>
+<%@page import="Vista.nomina2"%>
+<%@page import="Modelo.GestionNomina"%>
+<%@page import="Vista.nomina1"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -36,21 +41,32 @@
             <input type="text" class="doc" id="ape" name="ape" placeholder="Apellidos">
             <input type="number" class="doc" id="tel" name="tel" placeholder="Telefono">
             <Select class="doc" id="gen" name="gen" placeholder="Genero" required>
-                <option class="doc" id="gen">Masculino</option>
-                <option class="doc" id="gen">Femenino</option></select>
+                <option class="doc" id="gen">M</option>
+                <option class="doc" id="gen">F</option></select>
             <input type="submit" name="ing" class="ing" id="ing" value="Ingresar">
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<nomina1>nt=new ArrayList<>();
+                GestionNomina ge=new GestionNomina();
+                nt=ge.consultarempl();
+                nomina1 n1=new nomina1();
+                for(int i=0;i<nt.size();i++){
+                    n1=nt.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=n1.getCedula()%></td>
+                    <td><%=n1.getNombres()%></td>
+                    <td><%=n1.getApellidos()%></td>
+                    <td><%=n1.getTelefono()%></td>
+                    <td><%=n1.getGenero()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Pago semanal</center></h2>
         <form action="" method="post">
@@ -61,34 +77,56 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<nomina2>nt2=new ArrayList<>();
+                GestionNomina ge1=new GestionNomina();
+                nt2=ge1.consultarpa();
+                nomina2 n2=new nomina2();
+                for(int i=0;i<nt2.size();i++){
+                    n2=nt2.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=n2.getNfactura()%></td>
+                    <td><%=n2.getTotalsemana()%></td>
+                    <td><%=n2.getIDempleado()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Realiza</center></h2>
         <form action="" method="post">
             <input type="number" class="doc" id="reg" name="reg" placeholder="Registro">
-            <input type="number" class="doc" id="enc" name="enc" placeholder="Encargado">
+            <input type="text" class="doc" id="enc" name="enc" placeholder="Encargado">
             <input type="number" class="doc" id="ced" name="ced" placeholder="Cedula">
             <input type="number" class="doc" id="iem" name="iem" placeholder="Id_empleado">
-            <input type="number" class="doc" id="cod" name="cod" placeholder="Codigo">
+            <input type="text" class="doc" id="cod" name="cod" placeholder="Codigo">
             <input type="submit" name="ing" class="ing" id="ing" value="Ingresar">
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+            <%
+                ArrayList<nomina3>nt3=new ArrayList<>();
+                GestionNomina ge2=new GestionNomina();
+                nt3=ge2.consultarre();
+                nomina3 n3=new nomina3();
+                for(int i=0;i<nt3.size();i++){
+                    n3=nt3.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=n3.getRegistro()%></td>
+                    <td><%=n3.getEncargado()%></td>
+                    <td><%=n3.getCedula()%></td>
+                    <td><%=n3.getIDempleado()%></td>
+                    <td><%=n3.getCodigo()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Rol</center></h2>
         <form action="cCre" method="post">
