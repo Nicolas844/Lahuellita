@@ -34,29 +34,43 @@
             </div>
         </section>
         <section id="Bienvenidos empleados">
-            <h2><center>Bienvenidos empleados a su lugar de trabajo virtual</center></h2>
+            <h2><center>Bienvenido Señor usuario a su espacio de trabajo virtual</center></h2>
             <p><center>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ea eum alias reiciendis, tempore fugiat, distintio nihil corrupti hic nostrum!</center></p>
         </section>
         
         <section id="blog">
             <h3>Ultimas producciones</h3>
             <div class="contenedor">
-                <article>
-                    <img src="img/zapato_deportivo.jpeg" >
-                    <h4>Zapatos deportivos</h4>
-                </article>
-                <article>
-                    <img src="img/zapato_elegante.jpeg">
-                    <h4>Zapatos elegantes</h4>
-                </article>
-                <article>
-                    <img src="img/zapato_infantil.jpeg">
-                    <h4>Zapatos infnatiles</h4>
-                </article>
-                <article>
-                    <img src="img/botas_mujer.jpeg">
-                    <h4>Botas para dama</h4>
-                </article>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="img/Botas-mujer.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="img/Zapato-deportivo.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="img/Zapato-elegante.jpg" class="d-block w-100" alt="...">
+    </div>
+      <div class="carousel-item">
+          <img src="img/Zapato-infantil.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
             </div>
         </section>
         <section id="info">
@@ -67,7 +81,7 @@
                 </div>
                 <div class="info-users">
                     <img src="img/sebastian.jpeg">
-                    <h4>Sebastian TriviÃ±o</h4>
+                    <h4>Sebastian Triviño</h4>
                 </div>
                 <div class="info-users">
                     <img src="img/Nicolas.jpg">
