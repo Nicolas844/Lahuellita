@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: #CFF6F1;
+    background: white;
 }
 
 #blog article {

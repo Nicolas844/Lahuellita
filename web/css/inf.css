@@ -1,6 +1,6 @@
 #info {
-    background: #C63D07;
-    color: snow;
+    background: radial-gradient(firebrick, transparent);
+    color: black;
     text-align: center;
     padding: 20px;
 }
