@@ -80,7 +80,7 @@
     </main>
     <footer>
         <div class="contenedor">
-            <p class="copy">La huellita S.A.S &copy; 2020</p>
+            <p class="copy">La huellita S.A.S &copy; 2021</p>
             </div>
     </footer>
 </body>
