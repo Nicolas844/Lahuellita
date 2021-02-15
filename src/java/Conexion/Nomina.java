@@ -6,14 +6,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-public class conexion {
+public class Nomina {
     Connection cnn;
     public Connection conexiondb(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
             try {
                 cnn=DriverManager.getConnection("jdbc:mysql://localhost/nomina","root","");
-                JOptionPane.showMessageDialog(null,"Conexion establecida");
+                JOptionPane.showMessageDialog(null,"Conexion con nomina exitosa");
             } 
             catch (SQLException ex) {
                 JOptionPane.showMessageDialog(null,"Error de conexion con la base de datos "+ex);
@@ -25,7 +25,7 @@ public class conexion {
         return cnn;
     }
     public static void main(String[] args) {
-        conexion con=new conexion();
+        Nomina con=new Nomina();
         con.conexiondb();
     }
 }
