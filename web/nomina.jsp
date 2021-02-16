@@ -1,3 +1,4 @@
+<%@page import="Vista.nomina4"%>
 <%@page import="Vista.nomina3"%>
 <%@page import="Vista.nomina2"%>
 <%@page import="Modelo.GestionNomina"%>
@@ -78,12 +79,12 @@
         </form>
         <table border="5" width="90%">
             <%
-                ArrayList<nomina2>nt2=new ArrayList<>();
+                ArrayList<nomina2>nt1=new ArrayList<>();
                 GestionNomina ge1=new GestionNomina();
-                nt2=ge1.consultarpa();
+                nt1=ge1.consultarpa();
                 nomina2 n2=new nomina2();
-                for(int i=0;i<nt2.size();i++){
-                    n2=nt2.get(i);
+                for(int i=0;i<nt1.size();i++){
+                    n2=nt1.get(i);
             %>
             <tbody>
                 <tr>
@@ -98,7 +99,7 @@
         </table>
         <h2><center>Realiza</center></h2>
         <form action="" method="post">
-            <input type="number" class="doc" id="reg" name="reg" placeholder="Registro">
+            <input type="text" class="doc" id="reg" name="reg" placeholder="Registro">
             <input type="text" class="doc" id="enc" name="enc" placeholder="Encargado">
             <input type="number" class="doc" id="ced" name="ced" placeholder="Cedula">
             <input type="number" class="doc" id="iem" name="iem" placeholder="Id_empleado">
@@ -108,12 +109,12 @@
         </form>
         <table border="5" width="90%">
             <%
-                ArrayList<nomina3>nt3=new ArrayList<>();
+                ArrayList<nomina3>nt2=new ArrayList<>();
                 GestionNomina ge2=new GestionNomina();
-                nt3=ge2.consultarre();
+                nt2=ge2.consultarre();
                 nomina3 n3=new nomina3();
-                for(int i=0;i<nt3.size();i++){
-                    n3=nt3.get(i);
+                for(int i=0;i<nt2.size();i++){
+                    n3=nt2.get(i);
             %>
             <tbody>
                 <tr>
@@ -129,7 +130,7 @@
             %>
         </table>
         <h2><center>Rol</center></h2>
-        <form action="cCre" method="post">
+        <form action="" method="post">
             <input type="number" class="doc" id="co" name="co" placeholder="Codigo">
             <input type="number" class="doc" id="des" name="des" placeholder="Descripcion">
             <input type="number" class="doc" id="tar" name="tar" placeholder="Tarifa">
@@ -137,16 +138,27 @@
             <input type="submit" name="act" class="act" id="act" value="Actualizar">
         </form>
         <table border="5" width="90%">
+<%
+                ArrayList<nomina4>nt3=new ArrayList<>();
+                GestionNomina ge3=new GestionNomina();
+                nt3=ge3.consultarro();
+                nomina4 n4=new nomina4();
+                for(int i=0;i<nt3.size();i++){
+                    n4=nt3.get(i);
+            %>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=n4.getCodigo()%></td>
+                    <td><%=n4.getDescripcion()%></td>
+                    <td><%=n4.getTarifa()%></td>
                 </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
         <h2><center>Produccion diaria empleados</center></h2>
-        <form action="cCre" method="post">
+        <form action="" method="post">
             <input type="number" class="doc" id="re" name="re" placeholder="N° Registro">
             <input type="number" class="doc" id="idem" name="idem" placeholder="Id empleado">
             <input type="number" class="doc" id="to" name="to" placeholder="Total diario">

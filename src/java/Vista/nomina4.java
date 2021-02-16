@@ -1,14 +1,41 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Vista;
 
-/**
- *
- * @author lenovo
- */
 public class nomina4 {
+    private String codigo;
+    private String descripcion;
+    private int tarifa;
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public int getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(int tarifa) {
+        this.tarifa = tarifa;
+    }
+
+    public nomina4(String codigo, String descripcion, int tarifa) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.tarifa = tarifa;
+    }
+
+    public nomina4() {
+    }
     
 }
